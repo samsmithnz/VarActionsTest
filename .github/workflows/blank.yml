@@ -10,15 +10,11 @@ jobs:
       buildVersion2: 2
     steps:
       - run: |
-          $b1 = "1.0.0.0"
-          $b2 = "2.0.0.0"
-          echo "env.buildVersion1=$b1" >> $GITHUB_ENV
-          echo "buildVersion2=$b2" >> $GITHUB_ENV
-        shell: pwsh
+          echo "buildVersion=1.2.3" >> $GITHUB_ENV
+          echo "buildVersion1=1.0.0.0" >> $GITHUB_ENV
+          echo "buildVersion2=2.0.0.0" >> $GITHUB_ENV
       - run: |
           echo ${{env.buildVersion}}
           echo ${{env.buildVersion1}}
           echo ${{env.buildVersion2}}
-          echo ${{buildVersion1}}
-          echo ${{buildVersion2}}
         shell: pwsh
