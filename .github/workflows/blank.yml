@@ -14,8 +14,9 @@ jobs:
           $b2 = "2.0.0.0"
           echo "env.buildVersion1=$b1" >> $GITHUB_ENV
           echo "buildVersion2=$b2" >> $GITHUB_ENV
-          
+        shell: pwsh
       - run: |
           echo ${{env.buildVersion}}
           echo ${{env.buildVersion1}}
           echo ${{env.buildVersion2}}
+        shell: pwsh
