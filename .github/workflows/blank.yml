@@ -16,7 +16,6 @@ jobs:
           echo ${{env.buildVersion}}
           echo ${{env.buildVersion1}}
           echo ${{env.buildVersion2}}
-        shell: pwsh
       - run: |
           echo ${{env.buildVersion}}
           echo ${{env.buildVersion1}}
