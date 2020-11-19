@@ -19,4 +19,6 @@ jobs:
           echo ${{env.buildVersion}}
           echo ${{env.buildVersion1}}
           echo ${{env.buildVersion2}}
+          echo ${{buildVersion1}}
+          echo ${{buildVersion2}}
         shell: pwsh
